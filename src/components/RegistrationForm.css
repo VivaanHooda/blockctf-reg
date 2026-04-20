@@ -10,13 +10,15 @@
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   z-index: 1;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 .registration-container::before,
 .registration-container::after {
   content: '';
   flex: 1 0 auto;
-  min-height: 2rem;
+  min-height: 3rem;
 }
 
 /* ========== BACKGROUND LAYERS ========== */
@@ -53,6 +55,19 @@
   flex-shrink: 0;
   margin: 2rem 1rem;
   animation: fadeInUp 0.5s ease-out;
+}
+
+/* ========== CONTACT CARD ========== */
+.contact-card {
+  pointer-events: auto;
+  touch-action: auto;
+  overflow: visible;
+}
+
+.contact-card span a {
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: auto;
 }
 
 /* ========== FORM HEADER ========== */
@@ -568,18 +583,20 @@
   }
 
   /* Contact card responsive styles */
-  .registration-content > div:last-child {
-    margin: 0 -0.75rem;
+  .contact-card {
+    margin: 0 -0.75rem 0 -0.75rem !important;
     width: calc(100% + 1.5rem) !important;
     max-width: none !important;
-    padding: 0.75rem !important;
+    padding: 1rem 0.75rem !important;
+    border-radius: 0 0 1rem 1rem !important;
+    pointer-events: auto !important;
   }
 
-  .registration-content > div:last-child h3 {
+  .contact-card h3 {
     font-size: 0.95rem;
   }
 
-  .registration-content > div:last-child span {
+  .contact-card span {
     word-break: break-word;
     line-height: 1.4;
   }
@@ -631,12 +648,13 @@
   }
 
   /* Contact card responsive styles */
-  .registration-content > div:last-child {
+  .contact-card {
     max-width: none !important;
     padding: 1rem !important;
+    pointer-events: auto !important;
   }
 
-  .registration-content > div:last-child h3 {
+  .contact-card h3 {
     font-size: 1rem;
   }
 }

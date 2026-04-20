@@ -571,7 +571,7 @@ export default function RegistrationForm() {
           </Stepper>
         </form>
 
-        <div style={{ 
+        <div className="contact-card" style={{ 
           marginTop: '2.5rem', 
           marginLeft: 'auto',
           marginRight: 'auto',
