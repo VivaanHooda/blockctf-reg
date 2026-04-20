@@ -127,7 +127,7 @@ const getEmailTemplate = (participantName: string, teamName: string): string => 
             <div class="info-box">
                 <p><strong>📅 Date:</strong> 23/04/2026 (Thursday)</p>
                 <p><strong>⏰ Time:</strong> 2:00 PM – 6:00 PM</p>
-                <p><strong>📍 Venue:</strong> DTL Huddle</p>
+                <p><strong>📍 Venue:</strong> DTH</p>
                 <p><strong>🎯 Check-in:</strong> Please arrive by 1:45 PM to settle in.</p>
                 <p><strong>👥 Team Name:</strong> ${teamName}</p>
             </div>
