@@ -150,7 +150,6 @@ const getEmailTemplate = (participantName: string, teamName: string): string => 
             <div class="contact-box">
                 <p><strong>Vivaan Hooda:</strong> <a href="https://wa.me/919845936029" target="_blank" rel="noopener noreferrer" style="color: #22c55e; text-decoration: none; font-weight: 500;">9845936029</a></p>
                 <p><strong>Sathvic Sharma:</strong> <a href="https://wa.me/917204342252" target="_blank" rel="noopener noreferrer" style="color: #22c55e; text-decoration: none; font-weight: 500;">7204342252</a></p>
-                <p><strong>Dia Arora:</strong> <a href="https://wa.me/919742978916" target="_blank" rel="noopener noreferrer" style="color: #22c55e; text-decoration: none; font-weight: 500;">9742978916</a></p>
             </div>
             
             <p>Best regards,<br><strong>Vivaan Hooda</strong><br>Coding Club RVCE</p>

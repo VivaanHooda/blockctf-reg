@@ -159,9 +159,6 @@ export default function Home() {
                 <a href="https://wa.me/917204342252" target="_blank" rel="noopener noreferrer" style={{ color: '#22c55e', textDecoration: 'none' }}>
                   💬 Sathvic Sharma: 7204342252
                 </a>
-                <a href="https://wa.me/919742978916" target="_blank" rel="noopener noreferrer" style={{ color: '#22c55e', textDecoration: 'none' }}>
-                  💬 Dia Arora: 9742978916
-                </a>
               </div>
             </div>
           </div>

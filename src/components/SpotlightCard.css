@@ -31,3 +31,18 @@
 .card-spotlight:focus-within::before {
   opacity: 0.8;
 }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .card-spotlight {
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .card-spotlight {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}

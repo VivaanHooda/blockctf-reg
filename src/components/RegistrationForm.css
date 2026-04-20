@@ -461,15 +461,133 @@
 }
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 640px) {
+/* Mobile First - Extra Small (< 480px) */
+@media (max-width: 479px) {
   .registration-container {
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .registration-container::before,
+  .registration-container::after {
+    min-height: 1rem;
+  }
+
+  .registration-content {
+    margin: 1rem 0.75rem;
+    padding: 0;
+  }
+
+  .form-header {
+    margin-bottom: 1rem;
+  }
+
+  .form-header-badge {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .form-header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .form-header p {
+    font-size: 0.8rem;
+  }
+
+  .form-fields {
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .team-size-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .team-size-card {
     padding: 0.75rem;
+  }
+
+  .team-size-card .size-number {
+    font-size: 1.2rem;
+  }
+
+  .member-card {
+    padding: 0.875rem;
+  }
+
+  .member-header h3 {
+    font-size: 0.75rem;
+  }
+
+  .confirmation-features {
+    grid-template-columns: 1fr;
+  }
+
+  .conf-feature {
+    padding: 0.5rem;
+  }
+
+  .conf-feature-text {
+    font-size: 0.7rem;
+  }
+
+  .success-card {
+    padding: 1.5rem 1rem;
+    margin: 0 0.75rem;
+    width: calc(100% - 1.5rem);
+  }
+
+  .success-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .success-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .success-card p {
+    font-size: 0.8rem;
+  }
+
+  .loading-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .loading-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (480px - 640px) */
+@media (min-width: 480px) and (max-width: 640px) {
+  .registration-container {
+    padding: 0.5rem;
     align-items: flex-start;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .registration-content {
+    margin: 1rem auto;
   }
 
   .form-header h1 {
     font-size: 1.65rem;
+  }
+
+  .form-fields {
+    gap: 1.125rem;
+  }
+
+  .team-size-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .member-card {
@@ -477,12 +595,39 @@
   }
 
   .confirmation-features {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .success-card {
     padding: 2rem 1.5rem;
     margin: 0 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .success-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+/* Tablets (641px - 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .registration-content {
+    max-width: 600px;
+    margin: 1.5rem auto;
+  }
+
+  .step-circle-container {
+    padding: 1.75rem;
+  }
+
+  .form-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .success-card {
+    max-width: 500px;
+    padding: 2.5rem 2rem;
   }
 }
 

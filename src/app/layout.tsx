@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     icon: "/cclogo_v2.png",
     apple: "/cclogo_v2.png",
   },
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes",
   openGraph: {
     title: "Blockchain CTF Registration | Coding Club",
     description:
