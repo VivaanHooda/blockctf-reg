@@ -18,7 +18,7 @@
 .registration-container::after {
   content: '';
   flex: 1 0 auto;
-  min-height: 3rem;
+  min-height: 5rem;
 }
 
 /* ========== BACKGROUND LAYERS ========== */
@@ -584,12 +584,11 @@
 
   /* Contact card responsive styles */
   .contact-card {
-    margin: 0 -0.75rem 0 -0.75rem !important;
-    width: calc(100% + 1.5rem) !important;
-    max-width: none !important;
-    padding: 1rem 0.75rem !important;
-    border-radius: 0 0 1rem 1rem !important;
-    pointer-events: auto !important;
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+    margin-bottom: 5rem !important;
+    padding: 1rem !important;
+    width: calc(100% - 1.5rem) !important;
   }
 
   .contact-card h3 {
@@ -649,9 +648,10 @@
 
   /* Contact card responsive styles */
   .contact-card {
-    max-width: none !important;
-    padding: 1rem !important;
-    pointer-events: auto !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    margin-bottom: 5rem !important;
+    width: calc(100% - 2rem) !important;
   }
 
   .contact-card h3 {
@@ -677,6 +677,14 @@
   .success-card {
     max-width: 500px;
     padding: 2.5rem 2rem;
+  }
+
+  .contact-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 5rem !important;
+    width: calc(100% - 4rem) !important;
+    max-width: 640px !important;
   }
 }
 
