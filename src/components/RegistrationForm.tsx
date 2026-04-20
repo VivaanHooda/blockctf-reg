@@ -249,6 +249,8 @@ export default function RegistrationForm() {
             style={{ 
               margin: '0 auto 1.5rem auto', 
               display: 'block', 
+              width: 'auto',
+              height: 'auto',
               filter: 'drop-shadow(0 4px 20px rgba(34, 197, 94, 0.3))' 
             }} 
             priority

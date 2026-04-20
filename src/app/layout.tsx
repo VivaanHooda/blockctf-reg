@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     "Register your team for the Blockchain CTF — a capture the flag challenge by Coding Club",
   keywords: ["registration", "blockchain", "CTF", "coding club", "students"],
   authors: [{ name: "Coding Club" }],
+  icons: {
+    icon: "/cclogo_v2.png",
+    apple: "/cclogo_v2.png",
+  },
   openGraph: {
     title: "Blockchain CTF Registration | Coding Club",
     description:
@@ -25,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        <link rel="icon" type="image/png" href="/cclogo_v2.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
