@@ -1,0 +1,305 @@
+.outer-container {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ========== MAIN CARD ========== */
+.step-circle-container {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle shine gradient on card */
+.step-circle-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.3), transparent);
+}
+
+/* ========== STEP INDICATORS ========== */
+.step-indicator-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1.75rem;
+}
+
+.step-indicator {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.step-indicator-inner {
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.step-indicator:hover .step-indicator-inner {
+  transform: scale(1.08);
+}
+
+.active-dot {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.step-number {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.step-connector {
+  position: relative;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 2px;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1px;
+  background-color: rgba(100, 116, 139, 0.15);
+}
+
+.step-connector-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.check-icon {
+  height: 1.125rem;
+  width: 1.125rem;
+  color: #fff;
+}
+
+/* ========== STEP CONTENT ========== */
+.step-content-default {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.step-default {
+  padding: 0.75rem 0;
+}
+
+.step-default h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.step-default .step-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.step-default p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.step-default input,
+.step-default select,
+.step-default textarea {
+  width: 100%;
+}
+
+/* ========== FOOTER ========== */
+.footer-container {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-nav.spread {
+  justify-content: space-between;
+}
+
+.footer-nav.end {
+  justify-content: flex-end;
+}
+
+/* ========== BACK BUTTON ========== */
+.back-button {
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1.5rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+}
+
+.back-button:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: rgba(148, 163, 184, 0.04);
+}
+
+.back-button.inactive {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* ========== 3D GREEN NEXT/SUBMIT BUTTON (Button 58) ========== */
+.next-button {
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: #008542;
+  color: #fff;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.7s cubic-bezier(0, .8, .26, .99);
+}
+
+.next-button:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  transition: .7s cubic-bezier(0, .8, .26, .99);
+  z-index: -1;
+  background-color: #008542 !important;
+  box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+}
+
+.next-button:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: .7s cubic-bezier(0, .8, .26, .99);
+}
+
+.next-button:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.next-button:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+.next-button:active {
+  transform: translateY(4px);
+}
+
+.next-button:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+/* ========== STEP LABELS ========== */
+.step-label-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.step-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.step-label.active {
+  color: var(--green-400);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 640px) {
+  .step-circle-container {
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .step-indicator-inner {
+    height: 2.25rem;
+    width: 2.25rem;
+    font-size: 0.8rem;
+  }
+
+  .next-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.88rem;
+  }
+
+  .back-button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
