@@ -466,6 +466,7 @@
   .registration-container {
     padding: 0;
     min-height: 100vh;
+    padding-bottom: 3rem;
   }
 
   .registration-container::before,
@@ -476,6 +477,7 @@
   .registration-content {
     margin: 1rem 0.75rem;
     padding: 0;
+    width: calc(100% - 1.5rem);
   }
 
   .form-header {
@@ -564,6 +566,23 @@
   .loading-text p {
     font-size: 0.9rem;
   }
+
+  /* Contact card responsive styles */
+  .registration-content > div:last-child {
+    margin: 0 -0.75rem;
+    width: calc(100% + 1.5rem) !important;
+    max-width: none !important;
+    padding: 0.75rem !important;
+  }
+
+  .registration-content > div:last-child h3 {
+    font-size: 0.95rem;
+  }
+
+  .registration-content > div:last-child span {
+    word-break: break-word;
+    line-height: 1.4;
+  }
 }
 
 /* Small devices (480px - 640px) */
@@ -572,10 +591,12 @@
     padding: 0.5rem;
     align-items: flex-start;
     padding-top: 1.5rem;
+    padding-bottom: 3rem;
   }
 
   .registration-content {
     margin: 1rem auto;
+    width: calc(100% - 1rem);
   }
 
   .form-header h1 {
@@ -607,6 +628,16 @@
   .success-icon {
     width: 3.5rem;
     height: 3.5rem;
+  }
+
+  /* Contact card responsive styles */
+  .registration-content > div:last-child {
+    max-width: none !important;
+    padding: 1rem !important;
+  }
+
+  .registration-content > div:last-child h3 {
+    font-size: 1rem;
   }
 }
 
